@@ -1,50 +1,53 @@
 import React from "react";
 import "./Portfolio.css";
-import Img from "../../assets/baby.jpg";
+import BTC from "../../assets/blockchain.jpg";
+import Bookzey from "../../assets/bookzey.png";
+import LC from "../../assets/leetcode.png";
+import bus from "../../assets/bus.jpg"
 
 const data = [
   {
     id: 1,
-    image: Img,
-    title: "This is a portfolio title1",
-    github: "https://github.com/mukuljeswani?tab=repositories",
-    demo: "https://github.com/mukuljeswani?tab=repositories",
-  },
-  {
-    id: 2,
-    image: Img,
-    title: "This is a portfolio title2",
-    github: "https://github.com/mukuljeswani?tab=repositories",
-    demo: "https://github.com/mukuljeswani?tab=repositories",
-  },
-  {
-    id: 3,
-    image: Img,
-    title: "This is a portfolio title3",
-    github: "https://github.com/mukuljeswani?tab=repositories",
-    demo: "https://github.com/mukuljeswani?tab=repositories",
+    image: Bookzey,
+    title: "Bookzey",
+    github: "",
+    demo: "https://bookzey.com/",
   },
   {
     id: 4,
-    image: Img,
-    title: "This is a portfolio title4",
-    github: "https://github.com/mukuljeswani?tab=repositories",
-    demo: "https://github.com/mukuljeswani?tab=repositories",
+    image: LC,
+    title: "Leetcode Questions",
+    github: "https://github.com/mukuljeswani/Leetcode-Questions",
+    demo: "",
   },
   {
-    id: 5,
-    image: Img,
-    title: "This is a portfolio title5",
-    github: "https://github.com/mukuljeswani?tab=repositories",
-    demo: "https://github.com/mukuljeswani?tab=repositories",
+    id: 2,
+    image: BTC,
+    title: "Decentralized Crowdfunding System",
+    github: "",
+    demo: "",
   },
   {
-    id: 6,
-    image: Img,
-    title: "This is a portfolio title6",
-    github: "https://github.com/mukuljeswani?tab=repositories",
-    demo: "https://github.com/mukuljeswani?tab=repositories",
-  },
+    id: 3,
+    image: bus,
+    title: "Smart Bus management System",
+    github: "",
+    demo: "",
+  }
+  // {
+  //   id: 5,
+  //   image: Img,
+  //   title: "This is a portfolio title5",
+  //   github: "https://github.com/mukuljeswani?tab=repositories",
+  //   demo: "https://github.com/mukuljeswani?tab=repositories",
+  // },
+  // {
+  //   id: 6,
+  //   image: Img,
+  //   title: "This is a portfolio title6",
+  //   github: "https://github.com/mukuljeswani?tab=repositories",
+  //   demo: "https://github.com/mukuljeswani?tab=repositories",
+  // },
 ];
 
 const Portfolio = () => {
@@ -61,12 +64,12 @@ const Portfolio = () => {
               </div>
               <h3>{title}</h3>
               <div className="portfolio__item-cta">
-                <a href={github} className="btn" target="_blank">
+                {github.length > 1 ? <a href={github} className="btn" target="_blank">
                   Github
-                </a>
-                <a href={demo} className="btn btn-primary" target="_blank">
+                </a> : null}
+                {demo.length > 1 ? <a href={demo} className="btn btn-primary" target="_blank">
                   Live Demo
-                </a>
+                </a> : null}
               </div>
             </article>
           );
