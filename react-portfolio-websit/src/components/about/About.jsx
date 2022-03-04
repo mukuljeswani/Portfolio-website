@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import Me from "../../assets/Me.jpeg";
+import Me from "../../assets/memoji.webp";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
@@ -24,22 +24,21 @@ const About = () => {
               <h5>Experience</h5>
               <small>2+ years Working</small>
             </article>
-            <article className="about__card">
+            {/* <article className="about__card">
               <FiUsers className="about__icon" />
               <h5>Clients</h5>
               <small>2+ years Working</small>
-            </article>
+            </article> */}
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
-              <h5>Projects</h5>
-              <small>2+ years Working</small>
+              <h5>10 + Projects</h5>
+              <small>adding more..</small>
             </article>
           </div>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis
-            provident facere tempora. Ea eaque reprehenderit ratione sunt quas
-            nobis fugiat, esse, similique distinctio dolores excepturi mollitia
-            omnis odit doloribus sit.
+            I am an enthusiastic web developer with 2+ years of experience in developing web applications from scratch to scalar. 
+            I've always been passionate about innovation and the curious one for how things work and can be enhanced. 
+            Enjoy working on solutions that can make consumer experience better.
           </p>
           <a href="#contact" className="btn btn-primary">Let's Talk</a>
         </div>
