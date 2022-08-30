@@ -1,23 +1,23 @@
 import React from "react";
 import "./Portfolio.css";
 import BTC from "../../assets/blockchain.jpg";
-import Bookzey from "../../assets/bookzey.png";
-import LC from "../../assets/leetcode.png";
+import Edukop from "../../assets/edukop.png";
+import reactImage from "../../assets/react-image.png";
 import bus from "../../assets/bus.jpg"
 
 const data = [
   {
     id: 1,
-    image: Bookzey,
-    title: "Bookzey",
+    image: Edukop,
+    title: "Edukop",
     github: "",
-    demo: "https://bookzey.com/",
+    demo: "https://edukop.com/",
   },
   {
     id: 4,
-    image: LC,
-    title: "Leetcode Questions",
-    github: "https://github.com/mukuljeswani/Leetcode-Questions",
+    image: reactImage,
+    title: "React Projects",
+    github: "https://github.com/mukuljeswani/React-Projects",
     demo: "",
   },
   {
