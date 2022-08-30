@@ -57,6 +57,13 @@ const Experience = () => {
             <article className="experience__details">
               <BsPatchCheckFill className="experince__details-icon" />
               <div>
+                <h4>React Native</h4>
+                <small className="text-light">Experienced</small>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className="experince__details-icon" />
+              <div>
                 <h4>Ionic</h4>
                 <small className="text-light">Intermediate</small>
               </div>
